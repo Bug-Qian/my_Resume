@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的简历</title>
+	<meta name="description" content="钱佳勇简历">
+    <meta name="author" content="钱佳勇">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--框架-->
+    <script src="frameworks/jquery-2.1.4/jquery.min.js"></script>
+    <script src="frameworks/bootstrap-3.3.0-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="frameworks/bootstrap-3.3.0-dist/css/bootstrap.css">
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="css/main.css">
+	<!--<script>
+		window.onload = function(){
+			var audio = new Audio("audio/1.mp3");
+			audio.oncanplaythrough = function(){
+				var play = confirm("是否播放音乐？");
+				if(play){
+					audio.play();
+				}
+			};
+			audio.onfinish = function(){
+				var pause = confirm("已经播放完毕，还要不要再来一首？");
+				if(pause){
+					audio.play();
+				}
+			};
+		};
+	</script>-->
+</head>
+
+<body>    
+    <div class="container-fluid bg-success">
+		<audio controls="controls" id="audio1" autoplay="autoplay" class="hidden">
+			<source src="audio/1.mp3">
+			Your browser does not support the audio tag.
+		</audio>
+		<!--轮播盒子-->
+		<div class="row carousels">
+			<!--轮播-->
+			<div id = "c1" class="carousel slide" data-ride="carousel" data-interval = "10000">
+				<div class="carousel-inner">
+					<!--第一页-->
+					<div class="item active box1">
+						<div class="center">
+							<div class="circles">
+								<div class="outer">
+									<img src="images/q1.jpg" class="img-responsive img-circle t_img" alt="2">
+								</div>
+							</div>
+							<div class="name-title">
+								<div class="name">钱佳勇</div>
+								<div class="title">web前端工程师</div>
+							</div>
+							<ul class="contacts text-center list-unstyled">
+								<li class="contact">
+									<span class="glyphicon glyphicon-earphone"></span>
+									<span>18112671742</span>
+								</li>
+								<li class="contact">
+									<span class="icon icon-github">github网址:</span>
+									<a href="https://github.com/yslahq">https://github.com/Bug-Qian</a>
+								</li>
+								<li class="contact">
+									<span class="glyphicon glyphicon-envelope"></span>
+									<span>18112671742@163.com</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!--第二页-->
+					<div class="item box2" id="box2">
+						<div class="center2">
+							<h1 class="text-center">专业技能</h1>
+							<ul class="skills">
+								<li>熟练掌握HTML、CSS+DIV技术，能够根据需求写出可用性网页</li>
+								<li>能够解决当前主流浏览器兼容性的一些问题</li>
+								<li>熟练掌握JavaScript、jQuery，能够实现网页基本动态及交互</li>
+								<li>熟悉AJAX异步通信技术，能够使用JSONP解决跨域问题</li>
+								<li>能够使用前端开发常用的框架：Bootstrap、Angularjs、ionic、</li>
+								<li>熟悉HTML5、CSS3新技术及响应式布局</li>
+								<li>了解java，会基本使用Database的语法</li>
+								<li>熟练使用Dreamweaver、IntelliJ Idea、Sublime、Photoshop等工具</li>
+							</ul>
+						</div>
+					</div>
+
+					<!--第三页-->
+					<div class="item box3">
+						<div class="center3">
+							<h1 class="text-center">项目经历</h1>
+							<ul class="works">
+								<li class="work">
+									<p>
+										<span>链家网(手机端)</span><span class="text">web前端工程师</span>
+										<time>2016.10</time>
+									</p>
+									<ul class="description">
+										<li>使用PS对页面进行测量，颜色的吸取和抠图</li>
+										<li>使用HTML标记、div布局和css写样式进行pc端静态页面的编写</li>
+										<li>使用Bootstrap框架中的栅栏进行布局，实现响应式页面，同时也使用了HTML5、CSS3新技术</li>
+										<li>使用IntelliJ Idea，PS，firefox、chrome浏览器等开发工具</li>
+										<li><a href="https://github.com/Bug-Qian/lianjia">github网址：https://github.com/Bug-Qian/lianjia</a></li>
+									</ul>
+								</li>
+								<li class="work">
+									<p>
+										<span>学校作业考试系统</span>
+										<span class="text">web前端工程师</span>
+										<time>2016.09</time>
+									</p>
+									<ul class="description">
+										<li>使用HTML、CSS、JavaScript、JQuery、AngularJS等开发技术，IntelliJ IDEA、Adobe Photoshop等开发工具</li>
+										<li>独自编写题目列表、题目管理、手工组卷模块等应用功能</li>
+										<li>实现对学校考试试卷题目的添加、删除、修改、查询等几大功能</li>
+										<li>实现信息查询，信息添加，信息修改，信息删除等几大功能</li>
+										<li><a href="https://github.com/Bug-Qian/angularjs_exam">github网址：https://github.com/Bug-Qian/angularjs_exam</a></li>
+									</ul>
+								</li>
+								<li class="work">
+									<p>
+										<span>师生信息管理系统(模块)</span>
+										<span class="text">web前端工程师</span>
+										<time>2016.08</time>
+									</p>
+									<ul class="description">
+										<li>基于jQuery和ajax的学生信息管理系统</li>
+										<li>学生、教师、班级信息模块，且模块与模块之间互不影响，能方便有效的开发，后期也有利于维护</li>
+										<li>使用ajax进行前后台数据交互</li>
+										<li>实现信息查询，信息添加，信息修改，信息删除等几大功能</li>
+										<li><a href="https://github.com/Bug-Qian/sms_jquery">github网址：https://github.com/Bug-Qian/sms_jquery</a></li>
+									</ul>
+								</li>
+								<li class="work">
+									<p>
+										<span>鱿鱼网(模仿)</span>
+										<span class="text">web前端工程师</span>
+										<time>2016.07</time>
+									</p>
+									<ul class="description">
+										<li>基于SGML编写的静态网页（兼容当前所有主流浏览器）</li>
+										<li>实现了鱿鱼网站整套静态页面的显示</li>
+										<li><a href="https://github.com/Bug-Qian/yyw_end">github网址：https://github.com/Bug-Qian/yyw_end</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--第四张-->
+					<div class="item box4">
+							<div class="center4">
+								<h1 class="text-center">关于我</h1>
+								<ul class="education">
+									<li>
+										<span>2013.09 - 至今</span>
+										<span>江西理工大学</span>
+										<span>本科</span>
+										<span>软件工程</span>
+									</li>
+									<li>
+										<div class="major">大二、大三期间连续四次获得校级奖学金</div>
+									</li>
+									<li>
+										<div class="major">连续两次获得“优秀三好学生”荣誉称号</div>
+									</li>
+									<li>
+										<div class="major">英语能力：CET4</div>
+									</li>
+								</ul>
+								<ul class="aboutMe">
+									<li>
+										喜欢泡开发论坛、浏览各大博客（CSDN、Stack Overflow、github等）
+									</li>
+									<li>
+										个人性格非常好，为人处事本着和平相处的原则，与人相处融洽
+									</li>
+									<li>
+										对编码有浓厚的兴趣，对于技术非常热爱，自学能力较强
+									</li>
+									<li>
+										责任心强，做事严谨，喜欢完成自己所负责的任务
+									</li>
+
+									<li>
+										工作积极主动，做事非常有耐心
+									</li>
+								</ul>
+							</div>
+					</div>
+				</div>
+
+			<!--	&lt;!&ndash;左右按钮&ndash;&gt;
+				<a  class="left carousel-control"
+					data-slide="prev"
+					data-target=".carousel">
+					<span class="icon-prev"></span>
+				</a>
+				<a class="right carousel-control"
+				   data-slide="next"
+				   data-target=".carousel">
+					<span class="icon-next"></span>
+				</a>-->
+
+				<!--圆圈-->
+				<ol class="carousel-indicators">
+					<li data-slide-to="0" data-target=".carousel" class="active"></li>
+					<li data-slide-to="1" data-target=".carousel"></li>
+					<li data-slide-to="2" data-target=".carousel"></li>
+					<li data-slide-to="3" data-target=".carousel"></li>
+				</ol>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+
+/**************头像部分动画*******************/
+
+:root{ background-color: #DFF0D8;}
+.carousels{
+	height: 100%;}
+.center{
+	height: inherit;
+}
+.center>.circles{
+	padding:0 36px;/*圆圈动画*/
+	height: 150px;
+	margin: 50px auto;
+
+}
+.circles>.outer{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width:150px;
+	height:150px;
+	margin: 0 auto;
+	border:5px solid #9b9b9b;
+	padding:5px;/*动画*/
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius:50%;
+	-webkit-animation-name:outer_wobble;
+	-webkit-animation-duration: 4.4s;  /*9s*/
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-iteration-count: infinite;
+}
+.t_img{
+	width:140px;
+	height:100%;
+}
+@-webkit-keyframes outer_wobble {
+	20% {
+		padding:20px;
+	}
+	40% {
+		padding:5px;
+	}
+	65%{
+		padding:22px;
+	}
+	100%{
+		padding:5px;
+	}
+}
+/*第一页中间*/
+.name-title{
+	height: 200px;
+	text-align: center;
+	font-family: "宋体";
+
+
+}
+.name-title>div{ margin-bottom: 30px;}
+.name{
+	font-size: 40px;
+	color: #000;
+	font-weight: bold;
+}
+.title{
+	font-size: 25px;
+	color: #000;
+	font-weight: bold;
+}
+/*第一页底部*/
+.contacts{ height: 100px; margin-bottom: 50px;}
+.contacts>li{
+	list-style: none;
+	font-size: 18px;
+	color:#555;
+	margin: 5px auto;
+}
+
+/*第二页*/
+.center2 {
+	height: 505px;
+	margin: 0px auto;
+}
+
+
+.center2>h1{ font-weight: bold; margin: 20px auto;}
+.center2>.skills{ padding: 20px;}
+.skills>li{
+	margin:5px 0;
+	font-size: 16px;
+	color:#555;
+}
+
+/*第三页*/
+
+.center3>h1{
+	font-weight: bold;
+}
+.center3>.works{
+	padding: 20px;
+	margin-bottom: 50px;
+}
+
+.work>p>span{
+	display: inline-block;
+	padding-right: 5px;
+	font-size: 16px;
+	color:#4c5c68;
+}
+.work>.description{
+	padding-left: 20px;
+}
+.work>.description>li:last-child>a{ word-break: break-all}
+
+/*第四页*/
+.center4 {
+	height: 505px;
+	margin: 0px auto;
+}
+.center4>h1{
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.center4>ul{ padding: 20px; margin-bottom: 0px;}
+.center4>ul.education{ padding-bottom: 10px;}
+.center4>ul li{ margin: 5px 0px;}
+.center4>ul.aboutMe{ padding-top: 0px;}
+.center4>.education>li>span{ display: inline-block; padding-right: 5px;}
+
+@media (min-width: 768px) {
+	.carousels>#c1>.carousel-inner>.item{ text-align: center;}
+	.carousels>#c1>.carousel-inner>.item ul,span{ list-style: none; font-size: 20px;}
+}
+
